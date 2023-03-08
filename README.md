@@ -11,3 +11,8 @@ Ansilove
 ```
 [To Do...]
 ```
+
+# TODO
+-> Instalação
+-> Dependencias
+-> Usage
