@@ -41,7 +41,8 @@ elif [[ "$1" == "sslscan" ]]; then
             echo "$linha"
             # mkdir "$linha"
             # cd "$linha"
-            sslscan "$linha" >> "$linha.ssl"
+            sslscan $linha >> "$linha.ansi"
+            ansilove -o "$linha.png" "$linha.ansi"
             # cd ..
         done < "$2"
     else
@@ -50,6 +51,7 @@ elif [[ "$1" == "sslscan" ]]; then
         # mkdir "$alvo"
         # cd "$alvo"
         sslscan "$alvo" >> "$alvo.ssl"
+        ansilove -o "$alvo.png" "$alvo.ansi"
         # cd ..
     fi
 
