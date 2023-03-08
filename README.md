@@ -4,7 +4,7 @@ Simple bash script that transforms the output in an ansi file and then into a pn
 # Dependencies
 Ansilove
 ```
-sudo apt-get install ansi-love
+[To Do...]
 ```
 
 # Usage
