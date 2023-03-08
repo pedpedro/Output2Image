@@ -50,7 +50,7 @@ elif [[ "$1" == "sslscan" ]]; then
         echo "$alvo"
         # mkdir "$alvo"
         # cd "$alvo"
-        sslscan "$alvo" >> "$alvo.ssl"
+        sslscan "$alvo" >> "$alvo.ansi"
         ansilove -o "$alvo.png" "$alvo.ansi"
         # cd ..
     fi
