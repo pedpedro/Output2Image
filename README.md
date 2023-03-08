@@ -18,7 +18,7 @@ SSLScan
 sudo apt-get install sslscan
 ```
 
-#Install
+# Install
 ```
 git clone https://github.com/pedpedro/Output2Image.git
 # Create a directory to work on a project:
