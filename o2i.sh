@@ -13,9 +13,16 @@ if [[ "$1" == "headers" ]]; then
 
     if [[ -f "$2" ]]; then
         while IFS= read -r linha; do
+<<<<<<< HEAD
             echo "$linha" && mkdir "$linha"
 	    cd "$linha"
             python3 ../sec-headers-check.py -u "$linha" >> "$linha.ansi"
+=======
+            echo "$linha"
+            mkdir "$linha"
+            cd "$linha"
+            python3 simple-security-headers.py -u "$linha" >> "$linha.ansi"
+>>>>>>> 0693eced09595d90aa3eef7ecdbe0783421b1b7c
             ansilove -o "$linha.png" "$linha.ansi"
             cd ..
         done < "$2"
